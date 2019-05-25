@@ -10,7 +10,7 @@ const Header = ({ siteTitle, pathname }) => {
   }
   function blogActive() {
     if (pathname === "/blog") return "active"
-    return
+    else return ""
   }
   return (
     <nav className="navbar navbar-dark" style={{ backgroundColor: "maroon" }}>
