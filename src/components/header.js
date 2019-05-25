@@ -2,34 +2,35 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const Header = ({ siteTitle }) => {
+  function homeActive() {
+    if (window.location.pathname === "/") return "active"
+    else return ""
+  }
+  function blogActive() {
+    if (window.location.pathname === "/blog") return "active"
+    else return ""
+  }
+  return (
+    <nav className="navbar navbar-dark" style={{ backgroundColor: "maroon" }}>
+      <Link className="navbar-brand" style={{ textDecoration: "none" }}>
+        {siteTitle}
+      </Link>
+      <ul className="navbar-nav flex-row ">
+        <li className="nav-item pr-3">
+          <Link className={`nav-link ${homeActive()}`} to="/">
+            Home
+          </Link>
+        </li>
+        <li className="nav-item pr-3">
+          <Link className={`nav-link  ${blogActive()}`} to="/blog">
+            Blog
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

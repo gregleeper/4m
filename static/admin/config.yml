@@ -1,5 +1,6 @@
 backend:
-  name: 4m
+  name: git-gateway
+  repo: gregleeper/4m
 
 media_folder: static/assets
 public_folder: assets

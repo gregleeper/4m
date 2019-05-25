@@ -13,13 +13,13 @@ import Img from "gatsby-image"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const Image = () => (
+const BarbedImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "steel-fence-full.jpg" }) {
+        placeholderImage: file(relativePath: { eq: "barbed-wire.jpg" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 300) {
+            fluid(quality: 100, maxWidth: 300, maxHeight: 200) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -29,4 +29,4 @@ const Image = () => (
     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
-export default Image
+export default BarbedImage
