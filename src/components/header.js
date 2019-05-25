@@ -2,14 +2,15 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => {
+const Header = ({ siteTitle, pathname }) => {
   function homeActive() {
-    if (window.location.pathname === "/") return "active"
+    console.log(pathname)
+    if (pathname === "/") return "active"
     else return ""
   }
   function blogActive() {
-    if (window.location.pathname === "/blog") return "active"
-    else return ""
+    if (pathname === "/blog") return "active"
+    return
   }
   return (
     <nav className="navbar navbar-dark" style={{ backgroundColor: "maroon" }}>

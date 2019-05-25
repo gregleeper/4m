@@ -9,8 +9,9 @@ import Wood from "../components/homePage/Wood"
 import Barbed from "../components/homePage/Barbed"
 import Steel from "../components/homePage/Steel"
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = props => (
+  <Layout location={props.location}>
+    {console.log(props)}
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div className="container">
       <div className="row m-4 justify-content-center">

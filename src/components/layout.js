@@ -13,7 +13,7 @@ import styled from "styled-components"
 import Header from "./header"
 import "./layout.scss"
 
-const Layout = ({ children }) => (
+const Layout = ({ children, location }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -27,8 +27,12 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+        {console.log(location)}
         <div style={{ backgroundColor: "whitesmoke" }}>
-          <Header siteTitle={data.site.siteMetadata.title} />
+          <Header
+            pathname={location.pathname}
+            siteTitle={data.site.siteMetadata.title}
+          />
           <div
             style={{
               paddingBottom: "5%",

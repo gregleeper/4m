@@ -3,7 +3,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import Layout from "../../components/layout"
 import styled from "styled-components"
 
-const BlogIndex = () => {
+const BlogIndex = props => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark {
@@ -23,16 +23,15 @@ const BlogIndex = () => {
     }
   `)
 
-  console.log(data)
   return (
-    <Layout>
+    <Layout location={props.location}>
       <div className="container mt-4" style={{ paddingBottom: "20%" }}>
         <h1>Blog</h1>
 
         {data.allMarkdownRemark.edges.map(post => (
           <div className="card">
             <div className="card-body">
-              <MyLink to={`/posts/${post.node.fields.slug}`}>
+              <MyLink to={`/blog/${post.node.fields.slug}`}>
                 <h4>{post.node.frontmatter.title}</h4>
               </MyLink>
 

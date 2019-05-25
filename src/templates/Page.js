@@ -16,7 +16,8 @@ export const query = graphql`
 
 const PageTemplate = props => {
   return (
-    <Layout>
+    <Layout location={props.location}>
+      {console.log(props)}
       <div className="container mt-4">
         <h1>{props.data.markdownRemark.frontmatter.title}</h1>
         <p>{props.data.markdownRemark.frontmatter.date}</p>
