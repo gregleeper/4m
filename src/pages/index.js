@@ -26,7 +26,7 @@ const IndexPage = props => (
     />
     <div className="container">
       <div className="row m-4 justify-content-center">
-        <h1 style={{ fontFamily: "Brush Script MT", color: "maroon" }}>
+        <h1 style={{ fontFamily: "Arial Black", color: "maroon" }}>
           Don't call the rest when you can have the best!
         </h1>{" "}
       </div>
