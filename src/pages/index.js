@@ -1,8 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import { StyledBackgroundSection } from "../utils"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Wood from "../components/homePage/Wood"
@@ -12,7 +9,21 @@ import Steel from "../components/homePage/Steel"
 const IndexPage = props => (
   <Layout location={props.location}>
     {console.log(props)}
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="Home"
+      keywords={[
+        `fences`,
+        `fencing`,
+        `southwest Kansas`,
+        `Oklahoma panhandle`,
+        `steel`,
+        `privacy`,
+        `wood`,
+        `Hugoton`,
+        `barbed wire`,
+        `barbed`,
+      ]}
+    />
     <div className="container">
       <div className="row m-4 justify-content-center">
         <h1 style={{ fontFamily: "Brush Script MT", color: "maroon" }}>
@@ -34,18 +45,17 @@ const IndexPage = props => (
           (620)453-0063
         </a>
       </div>
-      <div className="row m-4">
-        <div className="col-md">
-          <Image />
-        </div>
-        <div className="col-md">
-          <p>
-            We build privacy, barbed wire, and steel fences brand new and repair
-            old.
-          </p>
-        </div>
+
+      <Image />
+
+      <div className="row m-4 justify-content-center">
+        <p>
+          We build privacy, barbed wire, and steel fences brand new and repair
+          old.
+        </p>
       </div>
     </div>
+
     <div className="container">
       <div className="row m-4">
         <div className="col-md d-flex align-items-stretch">

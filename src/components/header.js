@@ -4,8 +4,11 @@ import React from "react"
 
 const Header = ({ siteTitle, pathname }) => {
   function homeActive() {
-    console.log(pathname)
     if (pathname === "/") return "active"
+    else return ""
+  }
+  function picsActive() {
+    if (pathname === "/pictures") return "active"
     else return ""
   }
   function blogActive() {
@@ -21,6 +24,11 @@ const Header = ({ siteTitle, pathname }) => {
         <li className="nav-item pr-3">
           <Link className={`nav-link ${homeActive()}`} to="/">
             Home
+          </Link>
+        </li>
+        <li className="nav-item pr-3">
+          <Link className={`nav-link ${picsActive()}`} to="/pictures">
+            Pictures
           </Link>
         </li>
         <li className="nav-item pr-3">

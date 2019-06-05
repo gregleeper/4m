@@ -19,7 +19,7 @@ const BarbedImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "barbed-wire.jpg" }) {
           childImageSharp {
-            fluid(quality: 100, maxWidth: 300, maxHeight: 200) {
+            fluid(quality: 100, maxWidth: 500, maxHeight: 300) {
               ...GatsbyImageSharpFluid
             }
           }

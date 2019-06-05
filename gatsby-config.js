@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `4M Fencing`,
-    description: `4M Fencing builds quality fences.`,
+    description: `4M Fencing builds quality fences and repairs fences in southwest Kansas and Oklahoma panhandle.`,
     author: `Greg Leeper`,
+    url: "https://www.4m-fencing.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

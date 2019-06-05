@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
 
 import Header from "./header"
@@ -43,21 +43,31 @@ const Layout = ({ children, location }) => (
           <Footer>
             <div className="container">
               <div className="row">
-                <div className="col-md">
-                  <h6>Menu</h6>
+                <div className="col-md" style={{ marginTop: "2rem" }}>
+                  <h5>Menu</h5>
                   <Menu>
-                    <li>Home</li>
-                    <li>Blog</li>
+                    <li>
+                      <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                      <Link to="/pictures">Pictures</Link>
+                    </li>
+                    <li>
+                      <Link to="/blog">Blog</Link>
+                    </li>
                   </Menu>
                 </div>
-                <div className="col-md mb-3">Follow us on Facebook</div>
-                <div className="col-md">
+                <div className="col-md mb-3" style={{ marginTop: "2rem" }}>
+                  Follow us on Facebook
+                </div>
+                <div className="col-md" style={{ marginTop: "2rem" }}>
                   Call Today!
                   <br />
-                  <p className="deskTel">(620)453-0063</p>
-                  <a className="mobileTel" href="tel:6204530063">
-                    (620)453-0063
-                  </a>
+                  <p className="deskTel">(620)-453-0063</p>
+                  <p className="mobileTel">
+                    Tap number to call! ->{" "}
+                    <a href="tel:6204530063">(620)-453-0063</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -69,11 +79,14 @@ const Layout = ({ children, location }) => (
 )
 
 const Footer = styled.footer`
-  background-color: lightgray;
+  background-color: maroon;
   margin-top: 3rem;
-  color: black;
+  color: white;
   text-align: center;
   padding-bottom: 4rem;
+  a {
+    color: white;
+  }
 `
 
 const Menu = styled.ul`

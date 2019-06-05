@@ -6,9 +6,10 @@ const Steel = () => {
     <div className="card mb-4">
       <SteelImage className="card-img-top" />
       <div className="card-body">
-        <h5>Steel Privacy Fence</h5>
+        <h5>Steel Entrance Fencing</h5>
         <p>
-          Wanting total privacy? Go with a steel privacy fence. Top of the line!
+          Looking a great look to your entrance? Our steel fencing provides a
+          great look to any entrance.
         </p>
       </div>
     </div>
