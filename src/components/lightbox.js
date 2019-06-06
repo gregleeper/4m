@@ -44,6 +44,7 @@ export default class Lightbox extends Component {
           >
             <Img fluid={selectedImage.node.childImageSharp.fluid} />
             <button
+              class="btn btn-light"
               type="button"
               onClick={() => this.setState({ showLightbox: false })}
             >
