@@ -7,11 +7,26 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `railings`,
+        path: `${__dirname}/src/images/railings`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `ranch`,
+        path: `${__dirname}/src/images/ranch`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `privacy`,
+        path: `${__dirname}/src/images/privacy`,
       },
     },
     {
@@ -22,7 +37,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,

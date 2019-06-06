@@ -12,6 +12,7 @@ const IndexPage = props => (
     <SEO
       title="Home"
       keywords={[
+        `fence`,
         `fences`,
         `fencing`,
         `southwest Kansas`,
@@ -49,9 +50,11 @@ const IndexPage = props => (
       <Image />
 
       <div className="row m-4 justify-content-center">
-        <p>
+        <p style={{ fontSize: "1.2rem" }}>
           We build privacy, barbed wire, and steel fences brand new and repair
-          old.
+          old. All fences are custom built on location for that particular job.
+          They are built to customer specification and satisfaction. Our
+          customers will be happy when we leave!
         </p>
       </div>
     </div>

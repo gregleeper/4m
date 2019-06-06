@@ -2,11 +2,11 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Lightbox from "./lightbox"
 
-const ImageGallery = () => (
+const RailingsGallery = () => (
   <StaticQuery
     query={graphql`
       query {
-        images: allFile(filter: { sourceInstanceName: { eq: "images" } }) {
+        railings: allFile(filter: { sourceInstanceName: { eq: "railings" } }) {
           edges {
             node {
               id
@@ -20,8 +20,8 @@ const ImageGallery = () => (
         }
       }
     `}
-    render={data => <Lightbox fluid={data.images.edges} />}
+    render={data => <Lightbox fluid={data.railings.edges} />}
   />
 )
 
-export default ImageGallery
+export default RailingsGallery

@@ -20,7 +20,6 @@ export default class Lightbox extends Component {
     const { showLightbox, selectedImage } = this.state
     return (
       <>
-        <Header>Some of Our Work</Header>
         <LightboxContainer>
           {fluid.map(image => (
             <PreviewButton
@@ -87,10 +86,4 @@ const PreviewButton = styled.button`
   border: none;
   padding: 0;
   margin: 0;
-`
-
-const Header = styled.h2`
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
 `

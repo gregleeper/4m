@@ -8,8 +8,8 @@ const Steel = () => {
       <div className="card-body">
         <h5>Steel Entrance Fencing</h5>
         <p>
-          Looking a great look to your entrance? Our steel fencing provides a
-          great look to any entrance.
+          Want a great look to your entrance? Our steel fencing provides a great
+          look to any entrance.
         </p>
       </div>
     </div>
