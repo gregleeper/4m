@@ -7,7 +7,7 @@ const Wood = () => {
       <div className="card-body">
         <h5>Wooden Privacy Fences</h5>
         <p>
-          Our wooden privavcy fences are made of top quality pickets, steel
+          Our wooden privacy fences are made of top quality pickets, steel
           posts, and concrete footers.
         </p>
       </div>

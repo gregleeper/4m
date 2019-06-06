@@ -38,6 +38,7 @@ const IndexPage = props => (
         <p className="deskTel" style={{ fontSize: "1.5rem" }}>
           (620)453-0063
         </p>
+
         <a
           className="mobileTel"
           href="tel:6204530063"
@@ -45,16 +46,20 @@ const IndexPage = props => (
         >
           (620)453-0063
         </a>
+        <br />
+      </div>
+      <div class="row mt-2 justify-content-center">
+        <p style={{ fontSize: "1.5rem" }}>Residential and Commercial</p>
       </div>
 
       <Image />
 
       <div className="row m-4 justify-content-center">
         <p style={{ fontSize: "1.2rem" }}>
-          We build privacy, barbed wire, and steel fences brand new and repair
-          old. All fences are custom built on location for that particular job.
-          They are built to customer specification and satisfaction. Our
-          customers will be happy when we leave!
+          We build new privacy, barbed wire, and steel fences. We also repair
+          old fences. All fences are custom built on location. They are built to
+          customer specification and satisfaction. Customer satisfaction is our
+          ultimate goal!
         </p>
       </div>
     </div>
