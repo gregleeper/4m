@@ -3,7 +3,7 @@ import BarbedImage from "./BarbedImage"
 
 const Barbed = () => {
   return (
-    <div className="card mb-4">
+    <div className="card mb-4 shadow">
       <BarbedImage className="card-img-top" />
       <div className="card-body">
         <h5>Barbed Wire</h5>

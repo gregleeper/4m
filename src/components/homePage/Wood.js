@@ -2,7 +2,7 @@ import React from "react"
 import WoodImage from "./WoodImage"
 const Wood = () => {
   return (
-    <div className="card mb-4">
+    <div className="card mb-4 shadow">
       <WoodImage className="card-img-top" />
       <div className="card-body">
         <h5>Wooden Privacy Fences</h5>

@@ -3,7 +3,7 @@ import SteelImage from "./SteelImage"
 
 const Steel = () => {
   return (
-    <div className="card mb-4">
+    <div className="card mb-4 shadow">
       <SteelImage className="card-img-top" />
       <div className="card-body">
         <h5>Steel Entrance Fencing</h5>

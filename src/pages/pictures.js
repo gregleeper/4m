@@ -8,6 +8,10 @@ import RailingsGallery from "../components/railingsGallery"
 const Pictures = props => (
   <Layout location={props.location}>
     <Header>Ranch/Farm</Header>
+    <Helper>
+      Tap or click pictures to englarge. Rotate phone to landscape for larger
+      image sizes.
+    </Helper>
     <RanchGallery />
     <Header>Privacy</Header>
     <PrivacyGallery />
@@ -20,6 +24,13 @@ const Header = styled.h2`
   color: maroon;
   margin-top: 2rem;
   text-align: center;
+`
+
+const Helper = styled.p`
+  color: maroon;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
 `
 
 export default Pictures
