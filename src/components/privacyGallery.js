@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, useStaticQuery } from "gatsby"
 import Lightbox from "./lightbox"
 
 const PrivacyGallery = () => (
@@ -10,6 +10,7 @@ const PrivacyGallery = () => (
           edges {
             node {
               id
+              name
               childImageSharp {
                 fluid(maxWidth: 2000, quality: 100) {
                   ...GatsbyImageSharpFluid

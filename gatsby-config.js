@@ -7,7 +7,14 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-
+    {
+      resolve: `gatsby-source-s3-image`,
+      options: {
+        bucketName: `4m-fencing`,
+        domain: `s3.amazonaws.com`,
+        protocol: `https`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

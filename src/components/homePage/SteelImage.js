@@ -17,7 +17,7 @@ const SteelImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "steel-entrance.jpg" }) {
+        placeholderImage: file(relativePath: { regex: "/steel-entrance-2/" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 500, maxHeight: 300) {
               ...GatsbyImageSharpFluid

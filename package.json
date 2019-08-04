@@ -21,6 +21,8 @@
     "gatsby-remark-images": "^3.0.12",
     "gatsby-remark-relative-images": "^0.2.2",
     "gatsby-source-filesystem": "^2.0.33",
+    "gatsby-source-s3": "0.0.0",
+    "gatsby-source-s3-image": "^1.6.13",
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.19",
     "intersection-observer": "^0.7.0",
@@ -28,6 +30,7 @@
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.10",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "styled-components": "^4.2.0"

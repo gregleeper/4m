@@ -33,6 +33,7 @@ export default class Lightbox extends Component {
                 key={image.node.id}
                 fluid={image.node.childImageSharp.fluid}
               />
+              {image.node.name}
             </PreviewButton>
           ))}
         </LightboxContainer>

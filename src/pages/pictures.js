@@ -1,22 +1,36 @@
 import React from "react"
-import RanchGallery from "../components/ranchGallery"
 import Layout from "../components/layout"
 import styled from "styled-components"
-import PrivacyGallery from "../components/privacyGallery"
-import RailingsGallery from "../components/railingsGallery"
+import ResidentialHugoton from "../components/residentialPics"
+import CommercialPictures from "../components/commercialPics"
+import Tabs from "react-bootstrap/Tabs"
+import Tab from "react-bootstrap/Tab"
 
-const Pictures = props => (
+const Residential = props => (
   <Layout location={props.location}>
-    <Header>Ranch/Farm</Header>
-    <Helper>
-      Tap or click pictures to englarge. Rotate phone to landscape for larger
-      image sizes.
-    </Helper>
-    <RanchGallery />
-    <Header>Privacy</Header>
-    <PrivacyGallery />
-    <Header>Railings</Header>
-    <RailingsGallery />
+    <Tabs
+      defaultActiveKey="residential"
+      className="justify-content-center mt-3"
+      style={{ textDecoration: "none", color: "maroon" }}
+    >
+      <Tab eventKey="residential" title="Residential">
+        <Header>Residential Pictures</Header>
+        <Helper>
+          Tap or click pictures to englarge. Rotate phone to landscape for
+          larger image sizes.
+        </Helper>
+
+        <ResidentialHugoton />
+      </Tab>
+      <Tab eventKey="commercial" title="Commercial">
+        <Header>Commercial Pictures</Header>
+        <Helper>
+          Tap or click pictures to englarge. Rotate phone to landscape for
+          larger image sizes.
+        </Helper>
+        <CommercialPictures />
+      </Tab>
+    </Tabs>
   </Layout>
 )
 
@@ -33,4 +47,8 @@ const Helper = styled.p`
   font-size: 0.9rem;
 `
 
-export default Pictures
+const StyledTab = styled(Tab)`
+  color: maroon;
+`
+
+export default Residential
