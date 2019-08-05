@@ -7,14 +7,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-s3-image`,
-      options: {
-        bucketName: `4m-fencing`,
-        domain: `s3.amazonaws.com`,
-        protocol: `https`,
-      },
-    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -41,6 +34,20 @@ module.exports = {
       options: {
         name: `posts`,
         path: `${__dirname}/src/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `commercial`,
+        path: `${__dirname}/src/images/commercial`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `residential`,
+        path: `${__dirname}/src/images/residential`,
       },
     },
     `gatsby-transformer-sharp`,
