@@ -11,7 +11,6 @@ const Residential = props => (
     <Tabs
       defaultActiveKey="residential"
       className="justify-content-center mt-3"
-      style={{ textDecoration: "none", color: "maroon" }}
     >
       <Tab eventKey="residential" title="Residential">
         <Header>Residential Pictures</Header>

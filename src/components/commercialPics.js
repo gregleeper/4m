@@ -14,7 +14,7 @@ const CommercialPics = () => {
             id
             name
             childImageSharp {
-              fluid(maxWidth: 2000, quality: 100) {
+              fluid(maxWidth: 2000, quality: 65) {
                 ...GatsbyImageSharpFluid
               }
             }
