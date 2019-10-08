@@ -23,6 +23,7 @@ const IndexPage = props => (
         `Hugoton`,
         `barbed wire`,
         `barbed`,
+        `contractor`,
       ]}
     />
     <div className="container">
