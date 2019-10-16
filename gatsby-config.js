@@ -22,11 +22,20 @@ module.exports = {
         path: `${__dirname}/src/images/ranch`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `privacy`,
         path: `${__dirname}/src/images/privacy`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Playball", "cursive"],
+        },
       },
     },
     {

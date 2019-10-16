@@ -28,11 +28,6 @@ const IndexPage = props => (
     />
     <div className="container">
       <div className="row m-4 justify-content-center">
-        <h1 style={{ fontFamily: "Arial Black", color: "maroon" }}>
-          Don't call the rest when you can have the best!
-        </h1>{" "}
-      </div>
-      <div className="row m-4 justify-content-center">
         <h4>
           Call owner, <strong>Tom Mirabal</strong>, today for a quote.
         </h4>
@@ -54,8 +49,6 @@ const IndexPage = props => (
       <div class="row mt-2 justify-content-center">
         <p style={{ fontSize: "1.5rem" }}>Residential and Commercial</p>
       </div>
-
-      <Image />
 
       <div className="row m-4 justify-content-center">
         <p style={{ fontSize: "1.2rem" }}>

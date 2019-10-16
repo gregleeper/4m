@@ -11,6 +11,10 @@
   --hrcRed: #d60e0e;
   --hrcGray: #9b9999;
 }
+.displayFont {
+  font-family: "Playball", cursive;
+}
+
 .deskTel {
   display: none;
   @media (min-width: 768px) {
